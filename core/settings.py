@@ -25,7 +25,7 @@ SECRET_KEY = 'fz6+lw%5*b^&j8&wz5vb-xi-+2^$klpagds6r(cag^8*@xno83'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['danielcode-rd75avkmba-uc.a.run.app']
 
 
 # Application definition
