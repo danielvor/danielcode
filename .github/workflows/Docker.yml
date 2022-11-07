@@ -34,6 +34,6 @@ jobs:
       - name: Push Docker image
         run: docker push $IMAGE_NAME
 
-      # deploy image 
+      # deploy image ....
       - name: Deploy Docker image
         run: gcloud run deploy danielcode --image $IMAGE_NAME --region us-central1 --memory 128Mi --min-instances 0 --max-instances 1 --platform managed --port 8000 --allow-unauthenticated
