@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: danielcode
     env:
-      IMAGE_NAME: gcr.io/${{ secrets.GCP_PROJECT_ID }}/danielcode:latest
+      IMAGE_NAME: gcr.io/${{ secrets.GCP_PROJECT_ID }}/danielr:latest
     steps:
       # Git checkout
       - name: Checkout
@@ -34,6 +34,6 @@ jobs:
       - name: Push Docker image
         run: docker push $IMAGE_NAME
 
-      # deploy image ....
+      # deploy image .
       - name: Deploy Docker image
-        run: gcloud run deploy danielcode --image $IMAGE_NAME --region us-central1 --memory 128Mi --min-instances 0 --max-instances 1 --platform managed --port 8000 --allow-unauthenticated
+        run: gcloud run deploy danielr --image $IMAGE_NAME --region us-central1 --memory 128Mi --min-instances 0 --max-instances 1 --platform managed --port 8000 --allow-unauthenticated
