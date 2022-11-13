@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: danielcode
     env:
-      IMAGE_NAME: gcr.io/${{ secrets.GCP_PROJECT_ID }}/danielcode:latest
+      IMAGE_NAME: gcr.io/${{ secrets.GCP_PROJECT_ID }}/danielcode1311
     steps:
       # Git checkout
       - name: Checkout
